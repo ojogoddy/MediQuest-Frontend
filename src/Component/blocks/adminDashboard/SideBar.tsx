@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaHome } from 'react-icons/fa'
-import {  MdAnalytics, MdLogout, MdMenu, MdMessage, MdReport, MdSettings, MdSupportAgent } from 'react-icons/md'
+import {  MdAnalytics, MdLogout, MdMenu,  MdReport, MdSettings, MdSupportAgent } from 'react-icons/md'
 import { RiCalendarLine, RiTestTubeFill } from 'react-icons/ri'
 import { useNavigate } from 'react-router-dom'
 
