@@ -20,7 +20,7 @@ const NavBar:React.FC = () => {
     Navigate("/admin-dashboard/notification")
   }
   return (
-    <div className='bg-[#0D3859] h-[70px] fixed top-0 right-0 left-[230px] px-6'>
+    <div className='bg-[#003189] h-[70px] fixed top-0 right-0 left-[230px] px-6'>
         <div className="flex justify-between items-center h-[70px]">
         <div className=''>
             <h1 className="text-white font-medium text-[30px]">MediQuest</h1>

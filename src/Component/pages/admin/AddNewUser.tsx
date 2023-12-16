@@ -60,27 +60,17 @@ const AddNewUser:React.FC = () => {
         // Navigate("/admin-dashboard/page2")
         localStorage.setItem("userData", JSON.stringify(addNewForm));
         ShowToast(true, "New user successful")
-       
-
+    }
+    const handleCancel =()=>{
+        Navigate("/admin-dashboard")
     }
 
-    // const uploadImage =()=>{
-        // const formData = new FormData()
-        // formData.append("file", imageSelect)
-        // console.log(" here files", imageSelect)
-
-        // formData.append("upload-preset", "presetFromCloudinary")
-
-        // Axios.post("https://api.cloudinary.com/v1-1/mycloudinaryname/image/upload", formData).then((response:any)=>{
-        //     console.log(response)
-        // })
-    // }
   return (
-    <div className='bg-white p-7 rounded-lg mr-5'>
+    <div className='bg-white shadow-md text-[#003189] p-7 rounded-lg mr-5'>
         <div className="">
             <div className=" flex justify-between items-start mb-6">
                 <h2 className='text-[20px] font-bold'>Add New User</h2>
-                <div className="text-[25px]">
+                <div onClick={handleCancel} className="text-[25px]">
                 <MdClose/>
                 </div>
             </div>
@@ -135,8 +125,8 @@ const AddNewUser:React.FC = () => {
                     </div>
                     
                     <div className="flex items-center">
-                        <button type='submit' className='bg-[#0D3859] text-white px-4 py-2 rounded-md mr-4'>Add User</button>
-                        <button className='bg-white border border-[#0D3859] text-[#0D3859] px-4 py-2 rounded-md'>Cancel</button>
+                        <button type='submit' className='bg-[#003189] text-white px-4 py-2 rounded-md mr-4'>Add User</button>
+                        <button className='bg-white border border-[#0D3859] text-[#003189] px-4 py-2 rounded-md'>Cancel</button>
                     </div>
                 </div>
 
@@ -176,7 +166,7 @@ const AddNewUser:React.FC = () => {
                         </div>
                         
                </div>
-                   <div className="">
+                   {/* <div className="">
                    <h2 className="font-semibold text-center">Profile Picture</h2>
                    
                     <div className="w-[200px] h-[200px] rounded-full  ">
@@ -187,7 +177,7 @@ const AddNewUser:React.FC = () => {
                     </div>
                     <div className='bg-[#0D3859] text-white w-[200px] flex justify-center items-center py-2  rounded-md'>
                         Select Image</div>
-                   </div>
+                   </div> */}
                 </div>
             </form>
             </div>

@@ -12,7 +12,6 @@ import Documents from "../pages/admin/Documents"
 import Notification from "../pages/admin/Notification"
 import Appointment from "../pages/admin/Appointment"
 import Logout from "../pages/admin/Logout"
-import Page1 from "../pages/admin/Page"
 import AccessAccount from "../pages/AccessAccount"
 import LabLogin from "../pages/labpage/LabLogin"
 import LabRegister from "../pages/labpage/LabRegister"
@@ -44,10 +43,6 @@ export const Index = createBrowserRouter([
             {
                 path: "access-account",
                 element: <AccessAccount/>
-            },
-            {
-                path: "page",
-                element: <Page1/>
             },
             {
                 path: "lab-login",
@@ -116,7 +111,7 @@ export const Index = createBrowserRouter([
         
             children:
             [
-
+                
             ]
 
         
