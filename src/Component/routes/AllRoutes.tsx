@@ -20,6 +20,8 @@ import Page2 from "../pages/admin/Page2"
 import MediQuestLandingPage from "../pages/landing/MediQuestLandingPage"
 import Test from "../pages/admin/Test"
 
+import Userdashboardlayout from "../layout/userDashboardLayout/Userdashboardlayout"
+
 
 
 export const Index = createBrowserRouter([
@@ -102,7 +104,22 @@ export const Index = createBrowserRouter([
                 path: "page2",
                 element: <Page2/>
             },
-        ]
+
+            
+        ],
+
+    },
+    
+    {
+        path:"/userdashboard",
+        element:<Userdashboardlayout/>,
+        
+            children:
+            [
+
+            ]
+
+        
     }
 
 
