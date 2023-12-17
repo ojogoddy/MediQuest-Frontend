@@ -21,6 +21,7 @@ import MediQuestLandingPage from "../pages/landing/MediQuestLandingPage"
 import Test from "../pages/admin/Test"
 
 import Userdashboardlayout from "../layout/userDashboardLayout/Userdashboardlayout"
+import Overview from "../pages/users/Overview"
 
 
 
@@ -116,7 +117,13 @@ export const Index = createBrowserRouter([
         
             children:
             [
+                {
+                    index:true,
+                    element:<Overview/>
 
+                },
+
+           
             ]
 
         

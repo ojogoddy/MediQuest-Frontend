@@ -109,7 +109,7 @@
 
 // export default SideBar
 
-import React from 'react'
+import React ,{useState}from 'react'
 import {MdMenu} from "react-icons/md"
 import  {AiOutlineHome} from 'react-icons/ai'
 import { AiOutlineMedicineBox } from 'react-icons/ai'
@@ -118,9 +118,14 @@ import {BsBookmark} from "react-icons/bs"
 import {FiSettings} from "react-icons/fi"
 import {MdLogout} from "react-icons/md"
 import { useNavigate } from 'react-router-dom'
+import SideBarDropDown from './SideBarDropdown'
 
 
 const Sidebar:React.FC = () => {
+    const [dropdownshow, setdropdownshow] = useState<boolean>(false)
+  const DropDown = ()=> {
+    setdropdownshow(!dropdownshow)
+   }
     const Navigate = useNavigate()
 
     const Overview = ()=>{
@@ -145,12 +150,12 @@ const Sidebar:React.FC = () => {
         Navigate("/admin-dashboard/test")
     }
   return (
-
-    <div className='fixed pl-6  top-0 w-[230px] left-0 bottom-0 bg-[#0D3859] text-white'>
+      <>
+    <div className='fixed pl-6  top-0 w-[230px] left-0 bottom-0 bg-[#0D3859] text-white sm:hidden '>
         <div className="h-[70px] text-[25px] pt-5">
-            <MdMenu/>
+           { <MdMenu/>}
         </div>
-        <div className="space-y-9 ">
+        <div className="space-y-9 mt-10">
             <div onClick={Overview} className="flex focus:bg-white focus-visible:bg-black items-center gap-4 cursor-pointer">
                 <div className=" text-[25px]">
                     {<AiOutlineHome/>}
@@ -190,13 +195,26 @@ const Sidebar:React.FC = () => {
             </div>
         </div>
         <div className="flex items-center gap-4 cursor-pointer">
-                <div className="text-[25px]">
+                <div className="text-[25px] ">
                     <MdLogout/>
                 </div>
                 <div onClick={Logout} className="">Log Out</div>
             </div>
         </div>
+        </div>
+
+        <div className='block md:hidden lg:hidden xl:hidden 2xl:hidden'>
+     <div className='sm:flex sm:text-black sm:absolute  left-6 text-[24px] mt-4 font-extrabold  ' onClick={DropDown} >
+       {<MdMenu />}
+     </div>
+     {dropdownshow ? (
+       <div >
+         <SideBarDropDown changeSideBarShow={DropDown} />
+       </div>
+     ):null}
+    
     </div>
+    </>
   )
 }
 
