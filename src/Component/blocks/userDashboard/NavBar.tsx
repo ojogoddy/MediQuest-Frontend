@@ -1,7 +1,11 @@
 import React, {useState} from 'react'
-import { FaHeart, FaPlus, FaShare, FaUser } from 'react-icons/fa'
+import {  FaPlus} from 'react-icons/fa'
 import { FaMessage } from 'react-icons/fa6'
 import { MdNotifications } from 'react-icons/md'
+import { FaEnvelopeOpenText } from "react-icons/fa";
+import { LuCalendarClock } from "react-icons/lu";
+import { LuAlertTriangle } from "react-icons/lu";
+
 import { useNavigate } from 'react-router-dom'
 
 const NavBar:React.FC = () => {
@@ -13,12 +17,12 @@ const NavBar:React.FC = () => {
     }
 
   const AddNewuser = () =>{
-    Navigate("/admin-dashboard/addnewuser")
+    Navigate("/userdashboard/settings")
   }
 
-  const Notify =()=>{
-    Navigate("/admin-dashboard/notification")
-  }
+//   const Notify =()=>{
+//     Navigate("/admin-dashboard/notification")
+//   }
   return (
     <div className='bg-[#0D3859] h-[70px] fixed top-0 right-0 left-[230px] px-6'>
         <div className="flex justify-between items-center h-[70px]">
@@ -26,6 +30,7 @@ const NavBar:React.FC = () => {
             <h1 className="text-white font-medium text-[30px]">MediQuest</h1>
         </div>
         <div className=" flex items-center">
+            <div className='rounded-[50px] h-[30px] w-[30px] bg-green-700 text-white p-3 pt-1 pl-3 font-extrabold mr-2'>J</div>
             <input 
             className='rounded-[20px] px-4 py-1 shadow-md outline-none border-none text-black'
             type="text" placeholder='Search' />
@@ -44,52 +49,44 @@ const NavBar:React.FC = () => {
                   </div>
                   <div className="flex items-center gap-4">
                     <div className="bg-slate-200 rounded-full p-2">
-                      <FaHeart/>
+                    <LuCalendarClock />
                     </div>
                     <div className="text-[14px]">
-                      <p>Sara Crouch liked your photo</p>
+                      <p>You have an appointment with the doctor tomorrow by 3pm</p>
                       <p className='text-[10px]'>17 minutes ago</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-4">
                     <div className="bg-slate-200 rounded-full p-2">
-                      <FaUser/>
+                    <FaEnvelopeOpenText />
                     </div>
                     <div className="text-[14px]">
-                      <p>New user registered</p>
+                      <p>Test Result</p>
                       <p className='text-[10px]'>23 minutes ago</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-4">
                     <div className="bg-slate-200 rounded-full p-2">
-                      <FaShare/>
+                    <LuAlertTriangle />
                     </div>
                     <div className="text-[14px]">
-                      <p>Amanda Lie shared your post</p>
+                      <p>Kidney Stone Awareness,be sure to stay hydrated</p>
                       <p className='text-[10px]'>25 minutes ago</p>
                     </div>
                   </div>
-                  <div className="flex items-center gap-4">
-                    <div className="bg-slate-200 rounded-full p-2">
-                      <FaUser/>
-                    </div>
-                    <div className="text-[14px]">
-                      <p>New user registered</p>
-                      <p className='text-[10px]'>32 minutes ago</p>
-                    </div>
-                  </div>
+                 
                   <div className="flex items-center gap-4">
                     <div className="bg-slate-200 rounded-full p-2">
                       <FaMessage/>
                     </div>
                     <div className="text-[14px]">
-                      <p>You have a new message</p>
+                      <p>Healthy Diet Recommendation</p>
                       <p className='text-[10px]'>58 minutes ago</p>
                     </div>
                   </div>
-                  <button onClick={Notify} className='text-white rounded-md px-3 mx-auto flex items-center justify-center py-1 text-[16px] font-semibold w-[250px] bg-[#0D3859]'>
+                  {/* <button onClick={Notify} className='text-white rounded-md px-3 mx-auto flex items-center justify-center py-1 text-[16px] font-semibold w-[250px] bg-[#0D3859]'>
                     <p>View all notifications</p>
-                  </button>
+                  </button> */}
                 </div>
               </div>
             )}

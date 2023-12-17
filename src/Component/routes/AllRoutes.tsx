@@ -22,6 +22,10 @@ import Test from "../pages/admin/Test"
 
 import Userdashboardlayout from "../layout/userDashboardLayout/Userdashboardlayout"
 import Overview from "../pages/users/Overview"
+import Settings from "../pages/users/Settings"
+import BookingsSession from "../pages/users/BookingsSession"
+import Results from "../pages/users/Results"
+import AllBookings from "../pages/users/AllBookings"
 
 
 
@@ -114,13 +118,35 @@ export const Index = createBrowserRouter([
     {
         path:"/userdashboard",
         element:<Userdashboardlayout/>,
-        
             children:
             [
                 {
                     index:true,
                     element:<Overview/>
 
+                },
+                {
+                    path:"/userdashboard/settings",
+                    element:<Settings/>
+                },
+                {
+                    path:"/userdashboard/sessions",
+                    element:<BookingsSession/>
+                },
+
+                {
+                    path:"/userdashboard/logout",
+                    element:<Logout/>
+                },
+
+                {
+                    path:"/userdashboard/results",
+                    element:<Results/>
+                },
+
+                {
+                    path:"/userdashboard/bookings",
+                    element:<AllBookings/>
                 },
 
            

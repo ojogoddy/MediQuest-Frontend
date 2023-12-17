@@ -117,7 +117,7 @@ import { GrFormSchedule } from 'react-icons/gr'
 import {BsBookmark} from "react-icons/bs"
 import {FiSettings} from "react-icons/fi"
 import {MdLogout} from "react-icons/md"
-import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import SideBarDropDown from './SideBarDropdown'
 
 
@@ -126,29 +126,29 @@ const Sidebar:React.FC = () => {
   const DropDown = ()=> {
     setdropdownshow(!dropdownshow)
    }
-    const Navigate = useNavigate()
+    // const Navigate = useNavigate()
 
-    const Overview = ()=>{
-        Navigate("/admin-dashboard")
-    }
-    const Result = ()=>{
-        Navigate("/admin-dashboard/adminpatients")
-    }
-    const ScheduledSession = ()=>{
-        Navigate("/admin-dashboard/documents")
-    }
+    // const Overview = ()=>{
+    //     Navigate("/admin-dashboard")
+    // }
+    // const Result = ()=>{
+    //     Navigate("/admin-dashboard/adminpatients")
+    // }
+    // const ScheduledSession = ()=>{
+    //     Navigate("/admin-dashboard/documents")
+    // }
     // const Notification = ()=>{
     //     Navigate("/admin-dashboard/notification")
     // }
     // const Appoint = ()=>{
     //     Navigate("/admin-dashboard/appointment")
     // }
-    const Logout = ()=>{
-        Navigate("/admin-dashboard/logout")
-    }
-    const Bookings = ()=>{
-        Navigate("/admin-dashboard/test")
-    }
+    // const Logout = ()=>{
+    //     Navigate("/admin-dashboard/logout")
+    // }
+    // const Bookings = ()=>{
+    //     Navigate("/admin-dashboard/test")
+    // }
   return (
       <>
     <div className='fixed pl-6  top-0 w-[230px] left-0 bottom-0 bg-[#0D3859] text-white sm:hidden '>
@@ -156,52 +156,68 @@ const Sidebar:React.FC = () => {
            { <MdMenu/>}
         </div>
         <div className="space-y-9 mt-10">
-            <div onClick={Overview} className="flex focus:bg-white focus-visible:bg-black items-center gap-4 cursor-pointer">
+           <Link to="/userdashboard/">
+           <div className="flex focus:bg-white focus-visible:bg-black items-center gap-4 cursor-pointer">
                 <div className=" text-[25px]">
                     {<AiOutlineHome/>}
                 </div>
                 <div className="">Overview</div>
             </div>
-            <div className="flex items-center gap-4 cursor-pointer">
+
+           </Link>
+            <Link to="/userdashboard/results">
+            <div className="flex items-center mt-10 gap-4 cursor-pointer">
                 <div className="text-[25px]">
                 {<AiOutlineMedicineBox/>}
                 </div>
-                <div onClick={Result} className="">Results</div>
+                <div  className="">Results</div>
             </div>
-            <div className="flex items-center gap-4 cursor-pointer">
+            </Link>
+            
+            <Link to="/userdashboard/sessions">
+            <div className="flex items-center gap-4 mt-10 cursor-pointer">
                 <div className="text-[25px]">
                     {<GrFormSchedule/>}
                     
                 </div>
             
-                <div onClick={ScheduledSession} className="">Scheduled Sessions</div>
+                <div className="">Booking Sessions</div>
             </div>
-            <div className="flex items-center gap-4 cursor-pointer">
+            </Link>
+
+            <Link to="/userdashboard/bookings">
+            <div className="flex items-center gap-4 mt-10 cursor-pointer">
                 <div className="text-[25px]">
                 {<BsBookmark/>}
                 </div>
-                <div onClick={Bookings} className="">My Bookings</div>
+                <div className="">All Bookings</div>
             </div>
-            <div className="flex items-center gap-4 cursor-pointer ">
-                <div className="text-[25px]">
-                {<FiSettings/>}
+            </Link>
+
+            <Link to="/userdashboard/settings">
+           <div className="flex mt-10 items-center gap-4 cursor-pointer">
+                <div className=" text-[25px]">
+                    {<FiSettings/>}
                 </div>
+                <div className="">Settings</div>
+            </div>
+
+           </Link>
+
+           <Link to="/userdashboard/logout">
             
-            <div className="flex items-center  cursor-pointer">
-                <div className="text-[25px]">
-                    
-                </div>
-                <div onClick={Logout} className="">Settings</div>
-            </div>
-        </div>
-        <div className="flex items-center gap-4 cursor-pointer">
+        <div className="flex items-center gap-4 mt-10 cursor-pointer">
                 <div className="text-[25px] ">
                     <MdLogout/>
                 </div>
-                <div onClick={Logout} className="">Log Out</div>
+                <div className="">Log Out</div>
             </div>
+            </Link>
         </div>
+       
         </div>
+           
+        
 
         <div className='block md:hidden lg:hidden xl:hidden 2xl:hidden'>
      <div className='sm:flex sm:text-black sm:absolute  left-6 text-[24px] mt-4 font-extrabold  ' onClick={DropDown} >
