@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 
-const AccessAccount = () => {
+const AccessAccount:React.FC = () => {
     const Navigate = useNavigate()
 
     const handleLabLogin= async ()=>{

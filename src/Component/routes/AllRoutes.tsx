@@ -15,10 +15,8 @@ import Logout from "../pages/admin/Logout"
 import AccessAccount from "../pages/AccessAccount"
 import LabLogin from "../pages/labpage/LabLogin"
 import LabRegister from "../pages/labpage/LabRegister"
-import Page2 from "../pages/admin/Page2"
 import MediQuestLandingPage from "../pages/landing/MediQuestLandingPage"
 import Test from "../pages/admin/Test"
-
 import Userdashboardlayout from "../layout/userDashboardLayout/Userdashboardlayout"
 import SignLayout from "../layout/landingPageLayout/SignLayout"
 
@@ -115,10 +113,9 @@ export const Index = createBrowserRouter([
     {
         path:"/userdashboard",
         element:<Userdashboardlayout/>,
-        
             children:
             [
-                
+               
             ]
 
         
