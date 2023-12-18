@@ -9,10 +9,10 @@ const PatientProfile:React.FC = () => {
     <div className='flex gap-5'>
        <div className="">
        <section className="">
-            <div className="bg-slate-300 p-4 rounded-lg w-[330px]">
+            <div className="bg-white text-[#003189] shadow-md p-4 rounded-lg w-[330px]">
                 <div className="flex items-center gap-3">
                     <img className='w-[80px]' src={avatar} alt="" />
-                    <h1 className='font-semibold'>Dr Patience Monday</h1>
+                    <h1 className='font-semibold'>Dr Mazi Ikechukwu</h1>
                 </div>
                 <div className="space-y-2">
                 <h1 className='font-semibold'>Contacts:</h1>
@@ -26,13 +26,13 @@ const PatientProfile:React.FC = () => {
                 </div>
                 <div className="flex items-center gap-3">
                     <MdEmail/>
-                    <p className='text-[14px]'>patience@gmail.com</p>
+                    <p className='text-[14px]'>Ikechukwu@gmail.com</p>
                 </div>
                 </div>
             </div>
         </section>
         <section>
-            <div className="bg-slate-300 p-4 rounded-lg w-[330px] mt-[20px] space-y-8">
+            <div className="bg-white shadow-md text-[#003189] p-4 rounded-lg w-[330px] mt-[20px] space-y-8">
                 <div className="font-semibold flex justify-between">
                         <h1 className='font-semibold'>Physical Exam:</h1>
                         <p>...</p>
@@ -80,7 +80,7 @@ const PatientProfile:React.FC = () => {
             </div>
         </section>
         <section>
-            <div className="bg-slate-300 p-4 rounded-lg w-[330px] h-[350px] mt-[20px]">
+            <div className="bg-white shadow-md text-[#003189] p-4 rounded-lg w-[330px] h-[350px] mt-[20px]">
                 <div className='flex justify-between font-semibold'>
                     <p>Water</p>
                     <p>Goal: 15/56</p>
@@ -90,7 +90,7 @@ const PatientProfile:React.FC = () => {
        </div>
        <div className="">
        <section>
-            <div className="bg-slate-300 p-4 rounded-lg w-[850px] space-y-4">
+            <div className="bg-white shadow-md text-[#003189] p-4 rounded-lg w-[850px] space-y-4">
                 <div className="font-semibold flex justify-between">
                     <h1>Overview</h1>
                     <p>...</p>
@@ -126,7 +126,7 @@ const PatientProfile:React.FC = () => {
             </div>
         </section>
        <section>
-            <div className="bg-slate-300 p-4 rounded-lg w-[850px] mt-[20px] space-y-6">
+            <div className="bg-white shadow-md text-[#003189] p-4 rounded-lg w-[850px] mt-[20px] space-y-6">
                 <div className="font-semibold flex justify-between">
                     <h1>Reports:</h1>
                     <p>...</p>
@@ -150,8 +150,9 @@ const PatientProfile:React.FC = () => {
                     <div className="w-[200px]">
                         <h1>Date- 12 Mon, 2023</h1>
                     </div>
-                    <div className="w-[200px]">
+                    <div className="w-[200px] flex items-center gap-2  hover:text-red-500 cursor-pointer">
                         <MdDelete/>
+                        <p>delete</p>
                     </div>
                 </div>
                 <div className="flex justify-between">
@@ -161,8 +162,9 @@ const PatientProfile:React.FC = () => {
                     <div className="w-[200px]">
                         <h1>Date- 12 Mon, 2023</h1>
                     </div>
-                    <div className="w-[200px]">
+                    <div className="w-[200px] flex items-center gap-2  hover:text-red-500 cursor-pointer">
                         <MdDelete/>
+                        <p>delete</p>
                     </div>
                 </div>
                 <div className="flex justify-between">
@@ -172,8 +174,9 @@ const PatientProfile:React.FC = () => {
                     <div className="w-[200px]">
                         <h1>Date- 12 Mon, 2023</h1>
                     </div>
-                    <div className="w-[200px]">
+                    <div className="w-[200px] flex items-center gap-2  hover:text-red-500 cursor-pointer">
                         <MdDelete/>
+                        <p>delete</p>
                     </div>
                 </div>
                 <div className="flex justify-between">
@@ -183,8 +186,9 @@ const PatientProfile:React.FC = () => {
                     <div className="w-[200px]">
                         <h1>Date- 12 Mon, 2023</h1>
                     </div>
-                    <div className="w-[200px]">
+                    <div className="w-[200px] flex items-center gap-2  hover:text-red-500 cursor-pointer">
                         <MdDelete/>
+                        <p>delete</p>
                     </div>
                 </div>
                 <div className="flex justify-between">
@@ -194,8 +198,9 @@ const PatientProfile:React.FC = () => {
                     <div className="w-[200px]">
                         <h1>Date- 12 Mon, 2023</h1>
                     </div>
-                    <div className="w-[200px]">
+                    <div className="w-[200px] flex items-center gap-2  hover:text-red-500 cursor-pointer">
                         <MdDelete/>
+                        <p>delete</p>
                     </div>
                 </div>
                 <div className="flex justify-between">
@@ -205,8 +210,9 @@ const PatientProfile:React.FC = () => {
                     <div className="w-[200px]">
                         <h1>Date- 12 Mon, 2023</h1>
                     </div>
-                    <div className="w-[200px]">
+                    <div className="w-[200px] flex items-center gap-2  hover:text-red-500 cursor-pointer">
                         <MdDelete/>
+                        <p>delete</p>
                     </div>
                 </div>
                 

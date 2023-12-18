@@ -29,7 +29,7 @@ const SideBar:React.FC = () => {
         Navigate("/admin-dashboard/test")
     }
   return (
-    <div className='fixed pl-6  top-0 w-[230px] left-0 bottom-0 bg-[#0D3859] text-white'>
+    <div className='fixed pl-6  top-0 w-[230px] left-0 bottom-0 bg-[#003189] text-white'>
         <div className="h-[70px] text-[25px] pt-5">
             <MdMenu/>
         </div>

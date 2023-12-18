@@ -21,7 +21,7 @@ const Dropdown:React.FC<IProps> = () => {
 
   return (
     <div className='sm:bg-[red] sm:w-[50%] sm:h-[60vh] sm:absolute sm:top-[30px]'>
-         <div className='flex justify-between gap-10 text-black sm:hidden md:hidden lg:gap-6'>
+         <div className='flex justify-between gap-10 text-[#003189] sm:hidden md:hidden lg:gap-6'>
             <nav>Book Now</nav>
             <nav>Services</nav>
             <nav>About Us</nav>
@@ -31,10 +31,10 @@ const Dropdown:React.FC<IProps> = () => {
           </div>
 
           <div className="sm:hidden md:hidden">
-          <button className='bg-transparent text-black border border-[black] mr-2 py-2 px-5 rounded-[10px] lg:text-[14px]'
+          <button className='bg-transparent text-[#003189] border border-[black] mr-2 py-2 px-5 rounded-[10px] lg:text-[14px]'
           onClick={handleSignup}
           >Sign Up</button>
-          <button className='bg-black text-white py-2 px-6 rounded-[10px] lg:text-[14px]'
+          <button className='bg-[#003189] text-white py-2 px-6 rounded-[10px] lg:text-[14px]'
           onClick={handleLogin}
           >Log in</button>
         </div>

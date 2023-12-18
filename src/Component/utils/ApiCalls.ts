@@ -72,6 +72,15 @@ export const LogoutMediUser = async() =>{
         return error
     }
 }
+export const LogoutMediLab = async() =>{
+    try{
+        const response = await Instance.post("/MediLogout-lab")
+        console.log("response", response)
+    }catch(error:any)
+    {
+        return error
+    }
+}
 
 export const SingleMediUser = async(Id: string)=>{
     try{

@@ -3,12 +3,12 @@ import {BsThreeDotsVertical} from "react-icons/bs"
 
 const Test:React.FC = () => {
   return (
-    <div className="bg-white text-black p-3 rounded-lg w-[100%]">
+    <div className="bg-white text-[#003189] shadow-md p-3 rounded-lg w-[100%]">
        <div className="flex items-center justify-between">
         <div className="text-[20px] font-semibold">Test List</div>
             <div className="flex items-center gap-2 font-medium">
-                <p className='bg-[#0D3859] text-white px-4 py-1 rounded-md cursor-pointer'>Add Test</p>
-                <p className='bg-[#0D3859] text-white px-4 py-1 rounded-md cursor-pointer'>Edit Test</p>
+                <p className='bg-[#003189] text-white px-4 py-1 rounded-md cursor-pointer'>Add Test</p>
+                <p className='bg-[#003189] text-white px-4 py-1 rounded-md cursor-pointer'>Edit Test</p>
             </div>
        </div>
        <div className=' mt-4'>
@@ -56,8 +56,8 @@ const Test:React.FC = () => {
 						</td>
 						<td scope='row'className='px-6 py-4'>Pregnancy</td>
 						<td className='px-6 py-4'>Cardiology</td>
-						<td className='px-6 py-4 '>phoneNumber</td>
-						<td className='px-6 py-4 '>06-Dec-2023</td>
+						<td className='px-6 py-4 '>Pregnancy</td>
+						<td className='px-6 py-4 '>Pregnancy</td>
 						<td className='px-6 py-4 '>test</td>
 						<td className='px-6 py-4 text-[#00DBDE]'>
                             <button className=' w-full h-7 bg-[#E5FBF9]'>Active</button>
@@ -81,8 +81,8 @@ const Test:React.FC = () => {
 							</div>
 						</td>
 						<td scope='row' className='px-6 py-4 '>Mp/Widal</td>
-						<td className='px-6 py-4'>Male</td>
-						<td className='px-6 py-4 '>27</td>
+						<td className='px-6 py-4'>Cardiology</td>
+						<td className='px-6 py-4 '>Mp/Widal</td>
 						<td className='px-6 py-4 '>07/05/2023</td>
 						<td className='px-6 py-4 '>ECG</td>
 						<td className='px-6 py-4 text-[#FF01A2]'>
@@ -105,8 +105,8 @@ const Test:React.FC = () => {
 							</div>
 						</td>
 						<td scope='row' className='px-6 py-4 '>Mp/Widal</td>
-						<td className='px-6 py-4'>Male</td>
-						<td className='px-6 py-4 '>27</td>
+						<td className='px-6 py-4'>Cardiology</td>
+						<td className='px-6 py-4 '>Mp/Widal</td>
 						<td className='px-6 py-4 '>07/05/2023</td>
 						<td className='px-6 py-4 '>ECG</td>
 						<td className='px-6 py-4 text-[#FF01A2]'>
@@ -129,8 +129,8 @@ const Test:React.FC = () => {
 							</div>
 						</td>
 						<td scope='row' className='px-6 py-4 '>Mp/Widal</td>
-						<td className='px-6 py-4'>Male</td>
-						<td className='px-6 py-4 '>27</td>
+						<td className='px-6 py-4'>Cardiology</td>
+						<td className='px-6 py-4 '>Mp/Widal</td>
 						<td className='px-6 py-4 '>07/05/2023</td>
 						<td className='px-6 py-4 '>ECG</td>
 						<td className='px-6 py-4 text-[#FF01A2]'>
