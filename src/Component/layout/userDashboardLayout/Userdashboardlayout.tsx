@@ -6,7 +6,7 @@ import NavBar from '../../blocks/userDashboard/NavBar'
 
 const Userdashboardlayout:React.FC = () => {
   return (
-  <div className='bg-white'>
+  <div className=''>
      <Sidebar/>
         <div className=''>
             <NavBar/>
