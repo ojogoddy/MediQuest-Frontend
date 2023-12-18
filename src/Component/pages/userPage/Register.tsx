@@ -47,11 +47,11 @@ const Register:React.FC = () => {
 		}
 	};
   return (
-    <div className='bg-slate-300 h-screen w-screen flex justify-center items-center sm:bg-white md:bg-white'>
-       <div className="bg-slate-50 flex rounded-[10px] sm:bg-transparent sm:w-screen md:bg-transparent md:w-screen">
+    <div className='bg-slate-200 h-screen w-screen flex justify-center items-center sm:bg-white md:bg-white'>
+       <div className="bg-white flex rounded-[10px] sm:bg-transparent sm:w-screen md:bg-transparent md:w-screen">
         <div className='flex flex-col gap-4 mx-10 justify-center sm:mt-0 md:mt-0 sm:w-screen sm:mx-4 md:w-screen md:mx-6'>
             <h1 className=' text-center text-[50px] text-[#003189] font-extrabold  sm:text-[45px]'>MediQuest</h1>
-            <h2 className='text-black text-center text-[35px] sm:text-[20px]'>Sign Up</h2>
+            <h2 className='text-[#003189] text-center text-[35px] sm:text-[20px]'>Sign Up</h2>
            <form 
            
             onSubmit={(e)=>{

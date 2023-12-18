@@ -20,6 +20,7 @@ import MediQuestLandingPage from "../pages/landing/MediQuestLandingPage"
 import Test from "../pages/admin/Test"
 
 import Userdashboardlayout from "../layout/userDashboardLayout/Userdashboardlayout"
+import SignLayout from "../layout/landingPageLayout/SignLayout"
 
 
 
@@ -31,6 +32,18 @@ export const Index = createBrowserRouter([
             {
                 index: true,
                 element: <MediQuestLandingPage />
+            },
+            
+        ]
+    },
+
+    {
+        path: "/access-account",
+        element: <SignLayout/>,
+        children: [
+            {
+                index: true,
+                element: <AccessAccount/>
             },
             {
                 path: "/login",
@@ -95,12 +108,6 @@ export const Index = createBrowserRouter([
                 path: "logout",
                 element: <Logout/>
             },
-            {
-                path: "page2",
-                element: <Page2/>
-            },
-
-            
         ],
 
     },

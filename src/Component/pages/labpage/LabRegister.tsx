@@ -41,11 +41,11 @@ const LabRegister:React.FC = () => {
 		}
 	};
   return (
-    <div className='bg-slate-300 h-screen w-screen flex justify-center items-center sm:bg-white md:bg-white'>
-       <div className="bg-slate-50 flex rounded-[10px] sm:bg-transparent sm:w-screen md:bg-transparent md:w-screen">
+    <div className='bg-slate-200 h-screen w-screen flex justify-center items-center sm:bg-white md:bg-white'>
+       <div className="bg-white flex rounded-[10px] sm:bg-transparent sm:w-screen md:bg-transparent md:w-screen">
         <div className='flex flex-col gap-4 mx-10 justify-center sm:mt-0 md:mt-0 sm:w-screen sm:mx-4 md:w-screen md:mx-6'>
-            <h1 className=' text-center text-[50px] text-[#0D3859] font-extrabold  sm:text-[45px]'>MediQuest</h1>
-            <h2 className='text-black text-center text-[35px] sm:text-[20px]'>Sign Up</h2>
+            <h1 className=' text-center text-[50px] text-[#003189] font-extrabold  sm:text-[45px]'>MediQuest</h1>
+            <h2 className='text-[#003189] text-center text-[35px] sm:text-[20px]'>Sign Up</h2>
            <form 
            
             onSubmit={(e)=>{
@@ -80,7 +80,7 @@ const LabRegister:React.FC = () => {
             placeholder='Password' />
             </div> 
             <div className="mx-6 mt-8">
-                <button type='submit' className='bg-[#177eb1] text-white text-[18px] outline-none rounded-[30px] h-[55px] w-[400px]  sm:h-[45px] sm:w-full md:h-[45px] md:w-full'>Register</button>
+                <button type='submit' className='bg-[#003189] text-white text-[18px] outline-none rounded-[30px] h-[55px] w-[400px]  sm:h-[45px] sm:w-full md:h-[45px] md:w-full'>Register</button>
             </div>
             <div className="">
              <p className=' text-black text-center mt-2'>Already have an account? 
@@ -96,7 +96,7 @@ const LabRegister:React.FC = () => {
            </form>
                 
         </div>
-        <div className='bg-[#177eb1] h-[650px] w-[500px] m-auto rounded-[10px] sm:hidden md:hidden'>
+        <div className='bg-[#003189] h-[650px] w-[500px] m-auto rounded-[10px] sm:hidden md:hidden'>
         </div>
        </div>
     </div>
